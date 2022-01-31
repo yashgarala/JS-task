@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS TASK 1</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    </head>
+    <style>
+        .row{
+            width: 50%;
+        }
+        th,td{
+            border: 1px solid springgreen;
+            width: 500px;
+            text-align: center;
+        }
+    </style>
+    <body >
+        <div class="d-flex flex-column">
+            <div class="">
+                <div class="row  m-2 justify-content-center">
+                    <div class="col-2">
+                        <label for="user-name" class="col-form-label">Name </label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" class="form-control" id="user-name" name="Name">
+                       
+                    </div>
+                </div>
+                <div class="row  m-2  justify-content-center">
+                    <div class="col-2">
+                        <label class="col-form-label" for="user-email">Email</label>
+                    </div>
+                    <div class="col-8">
+                        <input class="form-control" type="text" id="user-email" name="Email">
+                      
+                    </div>
+                </div>
+                
+                <div class="row m-2 justify-content-center">
+                    <div class="col-2">
+                        <label for="contact" class="col-form-label">Contact Us</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="number" class="form-control" id="contact" name="Contact Us">
+                        <div class="text-danger" id="number_error"></div>
+                    </div>
+                </div>
+               
+                <div class="row m-2 justify-content-center">
+                    <div class="col-2">
+                        <label for="technology-id" class="col-form-label">Technology</label>
+                        
+                    </div>
+                    <div class="col-8">
+                        <input type="text"  class="form-control" id="technology-id" name="Technology">
+                    </div>
+                </div>
+                <div class="row m-2 justify-content-center">
+                    <div class="col-10 d-flex">
+                        <div class="form-check">
+                            <input  class="form-check-input" type="radio" name="gender" value="male" id="checkbox-one" checked>
+                            <label class="form-check-label" for="checkbox-one">
+                                Male
+                            </label>
+                        </div>
+                        <div class="form-check mx-5">
+                            <input class="form-check-input" type="radio" name="gender" value="female" id="checkbox-two">
+                            <label class="form-check-label" for="checkbox-two">
+                                Female
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-2 justify-content-center">
+                    <div class="col-10 d-grid">
+                        <button  class="btn btn-primary" onclick="getlog()">Get Log</button>
+                    </div>
+                </div>
+    
+    
+            </div>
+        </div>
+        <div id="table-div">
+
+        </div>
+    </body>
+<script src='./task.js'></script>
+</html>
